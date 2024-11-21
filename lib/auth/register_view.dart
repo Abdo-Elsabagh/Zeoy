@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:koey/Screen/home_Screen.dart';
-import 'package:koey/auth/register_view.dart';
+import 'package:koey/auth/login_viem.dart';
 
-class LoginView extends StatefulWidget {
-  const LoginView({super.key});
+class RegisterView extends StatefulWidget {
+  const RegisterView({super.key});
 
   @override
-  State<LoginView> createState() => _LoginViewState();
+  State<RegisterView> createState() => _RegisterViewState();
 }
 
-class _LoginViewState extends State<LoginView> {
+class _RegisterViewState extends State<RegisterView> {
   var formKey = GlobalKey<FormState>();
   bool isVisable = true;
   @override
@@ -27,14 +27,14 @@ class _LoginViewState extends State<LoginView> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const Text(
-                    'Welcome back',
+                    'Sing up',
                     style: TextStyle(fontSize: 30, color: Color(0xFF6f6f6f)),
                   ),
                   const SizedBox(
                     height: 10,
                   ),
                   Container(
-                    height: 500,
+                    height: 600,
                     width: 300,
                     decoration: BoxDecoration(
                         color: Colors.white,
@@ -46,6 +46,62 @@ class _LoginViewState extends State<LoginView> {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
+                          SizedBox(
+                            height: 50,
+                            width: 300,
+                            child: Row(
+                              children: [
+                                Expanded(
+                                    child: TextFormField(
+                                  decoration: const InputDecoration(
+                                      hintText: 'Frist Name'),
+                                )),
+                                const SizedBox(
+                                  width: 10,
+                                ),
+                                const Expanded(
+                                    child: TextField(
+                                  decoration:
+                                      InputDecoration(hintText: 'Last Name'),
+                                ))
+                              ],
+                            ),
+                          ),
+                          const SizedBox(
+                            height: 10,
+                          ),
+                          SizedBox(
+                            height: 50,
+                            width: 300,
+                            child: Row(
+                              children: [
+                                Expanded(
+                                    child: TextFormField(
+                                  decoration:
+                                      const InputDecoration(hintText: '   Day'),
+                                )),
+                                const SizedBox(
+                                  width: 10,
+                                ),
+                                const Expanded(
+                                    child: TextField(
+                                  decoration:
+                                      InputDecoration(hintText: '  Month'),
+                                )),
+                                const SizedBox(
+                                  width: 10,
+                                ),
+                                const Expanded(
+                                    child: TextField(
+                                  decoration:
+                                      InputDecoration(hintText: '   Year'),
+                                )),
+                              ],
+                            ),
+                          ),
+                          const SizedBox(
+                            height: 10,
+                          ),
                           TextFormField(
                             validator: (value) {
                               if (value!.isEmpty) {
@@ -55,7 +111,7 @@ class _LoginViewState extends State<LoginView> {
                             },
                             keyboardType: TextInputType.emailAddress,
                             decoration:
-                                const InputDecoration(hintText: 'User Name'),
+                                const InputDecoration(hintText: 'Email'),
                           ),
                           const SizedBox(
                             height: 15,
@@ -99,7 +155,7 @@ class _LoginViewState extends State<LoginView> {
                                 }
                               },
                               child: const Text(
-                                'Log in',
+                                'Create',
                                 style: TextStyle(
                                     color: Colors.white, fontSize: 40),
                               )),
@@ -109,11 +165,11 @@ class _LoginViewState extends State<LoginView> {
                           TextButton(
                               onPressed: () {
                                 Navigator.of(context).push(MaterialPageRoute(
-                                  builder: (context) => const RegisterView(),
+                                  builder: (context) => const LoginView(),
                                 ));
                               },
                               child: const Text(
-                                'Create an account !',
+                                ' Already have an account !',
                                 style: TextStyle(
                                     color: Color(0xff6f6f6f), fontSize: 20),
                               )),
