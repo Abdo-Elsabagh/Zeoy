@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:koey/Screen/home_Screen.dart';
+import 'package:koey/Screen/NavigationBar.dart';
 import 'package:koey/auth/login_viem.dart';
 
 class RegisterView extends StatefulWidget {
@@ -150,7 +150,8 @@ class _RegisterViewState extends State<RegisterView> {
                                 if (formKey.currentState!.validate()) {
                                   Navigator.of(context)
                                       .pushReplacement(MaterialPageRoute(
-                                    builder: (context) => const HomeScreen(),
+                                    builder: (context) =>
+                                        const NavigationScreen(),
                                   ));
                                 }
                               },

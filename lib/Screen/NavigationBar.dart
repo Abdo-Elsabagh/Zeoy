@@ -38,45 +38,75 @@ class _NavigationScreenState extends State<NavigationScreen> {
           showUnselectedLabels: false,
           items: [
             BottomNavigationBarItem(
-              icon: SvgPicture.asset(
-                'asset/svg/house-solid.svg',
-                height: 24,
-                width: 24,
-              ),
-              label: 'Home',
-            ),
+                icon: SvgPicture.asset(
+                  'asset/svg/house-solid.svg',
+                  height: 24,
+                  width: 24,
+                ),
+                label: 'Home',
+                activeIcon: SvgPicture.asset(
+                  'asset/svg/house-solid.svg',
+                  height: 24,
+                  width: 24,
+                  colorFilter: const ColorFilter.mode(
+                      Color(0xff2e746a), BlendMode.srcIn),
+                )),
             BottomNavigationBarItem(
-              icon: SvgPicture.asset(
-                'asset/svg/bell-solid.svg',
-                height: 24,
-                width: 24,
-              ),
-              label: 'Home',
-            ),
+                icon: SvgPicture.asset(
+                  'asset/svg/bell-solid.svg',
+                  height: 24,
+                  width: 24,
+                ),
+                label: 'Home',
+                activeIcon: SvgPicture.asset(
+                  'asset/svg/bell-solid.svg',
+                  height: 24,
+                  width: 24,
+                  colorFilter: const ColorFilter.mode(
+                      Color(0xff2e746a), BlendMode.srcIn),
+                )),
             BottomNavigationBarItem(
-              icon: SvgPicture.asset(
-                'asset/svg/envelope-solid.svg',
-                height: 24,
-                width: 24,
-              ),
-              label: 'Home',
-            ),
+                icon: SvgPicture.asset(
+                  'asset/svg/envelope-solid.svg',
+                  height: 24,
+                  width: 24,
+                ),
+                label: 'Home',
+                activeIcon: SvgPicture.asset(
+                  'asset/svg/envelope-solid.svg',
+                  height: 24,
+                  width: 24,
+                  colorFilter: const ColorFilter.mode(
+                      Color(0xff2e746a), BlendMode.srcIn),
+                )),
             BottomNavigationBarItem(
-              icon: SvgPicture.asset(
-                'asset/svg/heart-regular.svg',
-                height: 24,
-                width: 24,
-              ),
-              label: 'Home',
-            ),
+                icon: SvgPicture.asset(
+                  'asset/svg/heart-regular.svg',
+                  height: 24,
+                  width: 24,
+                ),
+                label: 'Home',
+                activeIcon: SvgPicture.asset(
+                  'asset/svg/heart-regular.svg',
+                  height: 24,
+                  width: 24,
+                  colorFilter: const ColorFilter.mode(
+                      Color(0xff2e746a), BlendMode.srcIn),
+                )),
             BottomNavigationBarItem(
-              icon: SvgPicture.asset(
-                'asset/svg/user-regular.svg',
-                height: 24,
-                width: 24,
-              ),
-              label: 'Home',
-            ),
+                icon: SvgPicture.asset(
+                  'asset/svg/user-regular.svg',
+                  height: 24,
+                  width: 24,
+                ),
+                label: 'Home',
+                activeIcon: SvgPicture.asset(
+                  'asset/svg/user-regular.svg',
+                  height: 24,
+                  width: 24,
+                  colorFilter: const ColorFilter.mode(
+                      Color(0xff2e746a), BlendMode.srcIn),
+                )),
           ]),
     );
   }

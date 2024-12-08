@@ -32,7 +32,7 @@ class SplahScreen extends StatelessWidget {
                   minimumSize: const Size(150, 50),
                 ),
                 onPressed: () {
-                  Navigator.of(context).push(MaterialPageRoute(
+                  Navigator.of(context).pushReplacement(MaterialPageRoute(
                     builder: (context) => const LoginView(),
                   ));
                 },
