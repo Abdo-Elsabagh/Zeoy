@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:koey/auth/register_view.dart';
+import 'package:koey/splashScreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,6 +29,6 @@ class MyApp extends StatelessWidget {
               borderRadius: BorderRadius.circular(40)),
         )),
         debugShowCheckedModeBanner: false,
-        home: const RegisterView());
+        home: const SplahScreen());
   }
 }
