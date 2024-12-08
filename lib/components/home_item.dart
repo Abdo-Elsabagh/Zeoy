@@ -1,9 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:koey/model/item.dart';
 
 class Item extends StatelessWidget {
-  Item({super.key, required this.item, this.onTop, this.onTop2});
-  final ItemModel item;
+  Item(
+      {super.key,
+      this.name1,
+      this.name2,
+      this.onTop,
+      this.onTop2,
+      this.image1,
+      this.image2});
+
+  String? image1;
+  String? image2;
+  String? name1;
+  String? name2;
   VoidCallback? onTop;
   VoidCallback? onTop2;
   @override
@@ -14,7 +24,7 @@ class Item extends StatelessWidget {
         GestureDetector(
           onTap: onTop,
           child: Container(
-            height: 200,
+            height: 220,
             width: 150,
             decoration: BoxDecoration(
                 color: Colors.black12, borderRadius: BorderRadius.circular(20)),
@@ -24,7 +34,7 @@ class Item extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(top: 8.0, left: 8, right: 8),
                     child: Image.asset(
-                      item.image1,
+                      image1!,
                       width: 140,
                       height: 150,
                       fit: BoxFit.fill,
@@ -32,8 +42,8 @@ class Item extends StatelessWidget {
                   ),
                   Center(
                       child: Text(
-                    item.name1,
-                    style: const TextStyle(color: Colors.black),
+                    name1!,
+                    style: const TextStyle(color: Colors.black, fontSize: 18),
                   ))
                 ],
               ),
@@ -43,7 +53,7 @@ class Item extends StatelessWidget {
         GestureDetector(
           onTap: onTop2,
           child: Container(
-            height: 200,
+            height: 220,
             width: 150,
             decoration: BoxDecoration(
                 color: Colors.black12, borderRadius: BorderRadius.circular(20)),
@@ -53,16 +63,16 @@ class Item extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(top: 8.0, left: 8, right: 8),
                     child: Image.asset(
-                      item.image2,
+                      image2!,
                       width: 140,
                       height: 150,
                       fit: BoxFit.fill,
                     ),
                   ),
-                   Center(
+                  Center(
                       child: Text(
-                    item.name2,
-                    style: TextStyle(color: Colors.black),
+                    name2!,
+                    style: const TextStyle(color: Colors.black, fontSize: 18),
                   ))
                 ],
               ),
