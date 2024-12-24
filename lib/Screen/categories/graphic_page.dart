@@ -17,9 +17,7 @@ class GraphicPage extends StatelessWidget {
           image: 'asset/image/graphic design.jpeg',
           name: 'Graphic\n desing',
           onTop: () {},
-          onTop2: () {},
-          nameOnTop1: 'خريطه التعلم',
-          nameOnTop2: 'ابدا التلعم'),
+          nameOnTop: 'ابدا التلعم'),
     );
   }
 }

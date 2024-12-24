@@ -6,15 +6,13 @@ class Categories extends StatelessWidget {
       required this.image,
       required this.name,
       required this.onTop,
-      required this.onTop2,
-      required this.nameOnTop1,
-      required this.nameOnTop2});
+      required this.nameOnTop});
   String? image;
   String? name;
+
   VoidCallback? onTop;
-  VoidCallback? onTop2;
-  String? nameOnTop1;
-  String? nameOnTop2;
+  String? nameOnTop;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -50,21 +48,7 @@ class Categories extends StatelessWidget {
                 ),
                 onPressed: onTop,
                 child: Text(
-                  nameOnTop1!,
-                  style: const TextStyle(color: Colors.white, fontSize: 40),
-                )),
-            const SizedBox(
-              height: 10,
-            ),
-            ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xff2e746a),
-                  padding: const EdgeInsets.all(8),
-                  minimumSize: const Size(300, 50),
-                ),
-                onPressed: onTop2,
-                child: Text(
-                  nameOnTop2!,
+                  nameOnTop!,
                   style: const TextStyle(color: Colors.white, fontSize: 40),
                 )),
           ],

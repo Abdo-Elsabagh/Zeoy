@@ -69,7 +69,7 @@ class HomeScreen extends StatelessWidget {
                   },
                   onTop2: () {
                     Navigator.of(context).push(MaterialPageRoute(
-                      builder: (context) => const GraphicPage(),
+                      builder: (scontext) => const GraphicPage(),
                     ));
                   },
                   image1: 'asset/image/AI.jpeg',
