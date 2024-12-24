@@ -1,4 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:koey/Screen/categories/ai_page.dart';
+import 'package:koey/Screen/categories/digital_page.dart';
+import 'package:koey/Screen/categories/graphic_page.dart';
+import 'package:koey/Screen/categories/mobile_page.dart';
+import 'package:koey/Screen/categories/ui_page.dart';
+import 'package:koey/Screen/categories/web_page.dart';
 import 'package:koey/components/home_item.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -37,33 +43,57 @@ class HomeScreen extends StatelessWidget {
                 child: ListView(
               children: [
                 Item(
-                  onTop: () {},
-                  onTop2: () {},
+                  onTop: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => const WebPage(),
+                    ));
+                  },
+                  onTop2: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => const MobilePage(),
+                    ));
+                  },
                   image1: 'asset/image/web .jpeg',
-                  image2: 'asset/image/mobile app.jpeg',
-                  name1: 'Web \n Development',
-                  name2: 'Mobile\n Development',
+                  image2: 'asset/image/mobile app.jpg',
+                  name1: '\t  \t  \tWeb \n Development',
+                  name2: '\t \t \t Mobile\n Development',
                 ),
                 const SizedBox(
                   height: 10,
                 ),
                 Item(
-                  onTop: () {},
-                  onTop2: () {},
+                  onTop: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => const AiPage(),
+                    ));
+                  },
+                  onTop2: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => const GraphicPage(),
+                    ));
+                  },
                   image1: 'asset/image/AI.jpeg',
                   image2: 'asset/image/graphic design.jpeg',
                   name1: 'AI',
-                  name2: 'Graphic\n  desing',
+                  name2: 'Graphic\n desing',
                 ),
                 const SizedBox(
                   height: 10,
                 ),
                 Item(
-                  onTop: () {},
-                  onTop2: () {},
+                  onTop: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => const DigitalPage(),
+                    ));
+                  },
+                  onTop2: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => const UiPage(),
+                    ));
+                  },
                   image1: 'asset/image/digital markting.jpeg',
                   image2: 'asset/image/UI& UX.png',
-                  name1: 'digital\n marketing',
+                  name1: '\t \t digital\n marketing',
                   name2: 'UI & UX',
                 ),
               ],

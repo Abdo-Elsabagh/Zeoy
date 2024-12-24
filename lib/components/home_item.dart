@@ -33,11 +33,14 @@ class Item extends StatelessWidget {
                 children: [
                   Padding(
                     padding: const EdgeInsets.only(top: 8.0, left: 8, right: 8),
-                    child: Image.asset(
-                      image1!,
-                      width: 140,
-                      height: 150,
-                      fit: BoxFit.fill,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(20),
+                      child: Image.asset(
+                        image1!,
+                        width: 140,
+                        height: 150,
+                        fit: BoxFit.fill,
+                      ),
                     ),
                   ),
                   Center(
@@ -62,11 +65,14 @@ class Item extends StatelessWidget {
                 children: [
                   Padding(
                     padding: const EdgeInsets.only(top: 8.0, left: 8, right: 8),
-                    child: Image.asset(
-                      image2!,
-                      width: 140,
-                      height: 150,
-                      fit: BoxFit.fill,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(20),
+                      child: Image.asset(
+                        image2!,
+                        width: 140,
+                        height: 150,
+                        fit: BoxFit.fill,
+                      ),
                     ),
                   ),
                   Center(
