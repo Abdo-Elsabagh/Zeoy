@@ -17,7 +17,7 @@ class AiPage extends StatelessWidget {
           image: 'asset/image/AI.jpeg',
           name: 'AI',
           onTop: () {},
-          nameOnTop: 'ابدا التلعم'),
+          nameOnTop: 'ابدا التعلم'),
     );
   }
 }

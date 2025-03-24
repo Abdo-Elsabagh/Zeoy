@@ -13,8 +13,8 @@ class DigitalPage extends StatelessWidget {
       body: Categories(
         image: 'asset/image/digital markting.jpeg',
         name: '\t \t digital\n marketing',
-        nameOnTop: 'ابدا التلعم',
-       onTop: () {},
+        nameOnTop: 'ابدا التعلم',
+        onTop: () {},
       ),
     );
   }

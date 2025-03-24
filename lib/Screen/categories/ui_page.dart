@@ -17,7 +17,7 @@ class UiPage extends StatelessWidget {
           image: 'asset/image/UI& UX.png',
           name: 'UI & UX',
           onTop: () {},
-          nameOnTop: 'ابدا التلعم'),
+          nameOnTop: 'ابدا التعلم'),
     );
   }
 }

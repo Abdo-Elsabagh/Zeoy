@@ -16,7 +16,7 @@ class MobilePage extends StatelessWidget {
       body: Categories(
         image: 'asset/image/mobile app.jpg',
         name: '\t \t \t Mobile\n Development',
-        nameOnTop: 'ابدا التلعم',
+        nameOnTop:'ابدا التعلم',
         onTop: () {},
       ),
     );

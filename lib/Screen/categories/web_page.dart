@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:koey/Screen/adding/web.dart';
 import 'package:koey/components/categories_item.dart';
 
 class WebPage extends StatelessWidget {
@@ -16,7 +17,11 @@ class WebPage extends StatelessWidget {
         body: Categories(
             image: 'asset/image/web .jpeg',
             name: '\t  \t  \tWeb \n Development',
-            onTop: () {},
-            nameOnTop: 'ابدا التلعم'));
+            onTop: () {
+              Navigator.of(context).push(MaterialPageRoute(
+                builder: (scontext) => const WebCategories(),
+              ));
+            },
+            nameOnTop: 'ابدا التعلم'));
   }
 }
