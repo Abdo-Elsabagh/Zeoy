@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:koey/Screen/adding/mobile.dart';
 import 'package:koey/components/categories_item.dart';
 
 class MobilePage extends StatelessWidget {
@@ -16,8 +17,12 @@ class MobilePage extends StatelessWidget {
       body: Categories(
         image: 'asset/image/mobile app.jpg',
         name: '\t \t \t Mobile\n Development',
-        nameOnTop:'ابدا التعلم',
-        onTop: () {},
+        nameOnTop: 'ابدا التعلم',
+        onTop: () {
+          Navigator.of(context).push(MaterialPageRoute(
+            builder: (scontext) => const MobileCategories(),
+          ));
+        },
       ),
     );
   }

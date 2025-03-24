@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:koey/Screen/adding/graphic.dart';
 import 'package:koey/components/categories_item.dart';
 
 class GraphicPage extends StatelessWidget {
@@ -16,7 +17,11 @@ class GraphicPage extends StatelessWidget {
       body: Categories(
           image: 'asset/image/graphic design.jpeg',
           name: 'Graphic\n desing',
-          onTop: () {},
+          onTop: () {
+            Navigator.of(context).push(MaterialPageRoute(
+              builder: (scontext) => const GraphicCategories(),
+            ));
+          },
           nameOnTop: 'ابدا التعلم'),
     );
   }

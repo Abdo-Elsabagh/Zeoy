@@ -25,17 +25,19 @@ class HomeScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xff2e746a),
-                  padding: const EdgeInsets.all(8),
-                  minimumSize: const Size(150, 50),
-                ),
-                onPressed: () {},
-                child: const Text(
-                  'Categories',
-                  style: TextStyle(color: Colors.white, fontSize: 22),
-                )),
+            Center(
+              child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: const Color(0xff2e746a),
+                    padding: const EdgeInsets.all(8),
+                    minimumSize: const Size(150, 50),
+                  ),
+                  onPressed: () {},
+                  child: const Text(
+                    'Categories',
+                    style: TextStyle(color: Colors.white, fontSize: 22),
+                  )),
+            ),
             const SizedBox(
               height: 16,
             ),

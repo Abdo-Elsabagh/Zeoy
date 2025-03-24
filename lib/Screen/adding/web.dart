@@ -22,7 +22,8 @@ class WebCategories extends StatelessWidget {
             Adding(
                 image: 'asset/image/Back end.jpeg',
                 onTop: () {},
-                name: 'Back End ')
+                name: 'Back End '),
+          
           ],
         ),
       ),

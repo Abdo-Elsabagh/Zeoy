@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:koey/Screen/adding/ui&ux.dart';
 import 'package:koey/components/categories_item.dart';
 
 class UiPage extends StatelessWidget {
@@ -16,7 +17,11 @@ class UiPage extends StatelessWidget {
       body: Categories(
           image: 'asset/image/UI& UX.png',
           name: 'UI & UX',
-          onTop: () {},
+          onTop: () {
+            Navigator.of(context).push(MaterialPageRoute(
+              builder: (scontext) => const UiCategories(),
+            ));
+          },
           nameOnTop: 'ابدا التعلم'),
     );
   }
