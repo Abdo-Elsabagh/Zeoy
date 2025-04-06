@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:koey/Screen/add%202/back_end.dart';
 import 'package:koey/components/categories_add.dart';
 
 class WebCategories extends StatelessWidget {
@@ -21,9 +22,12 @@ class WebCategories extends StatelessWidget {
             ),
             Adding(
                 image: 'asset/image/Back end.jpeg',
-                onTop: () {},
+                onTop: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (scontext) => const BackEndCategories2(),
+                  ));
+                },
                 name: 'Back End '),
-          
           ],
         ),
       ),

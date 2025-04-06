@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:koey/Screen/add%202/photo_Shop.dart';
 import 'package:koey/components/categories_add2.dart';
 
 class GraphicCategories extends StatelessWidget {
@@ -30,7 +31,11 @@ class GraphicCategories extends StatelessWidget {
               Adding2(
                 image: 'asset/image/photoshop.png',
                 name: 'Photo Shop',
-                onTop: () {},
+                onTop: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (scontext) => const PhotoShop2(),
+                  ));
+                },
               ),
               const SizedBox(
                 height: 40,

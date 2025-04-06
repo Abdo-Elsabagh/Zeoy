@@ -14,7 +14,7 @@ class Adding extends StatelessWidget {
     return GestureDetector(
       onTap: onTop,
       child: Container(
-        height: 220,
+        height: 240,
         width: double.infinity,
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20), color: Colors.grey),
