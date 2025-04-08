@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:koey/Screen/NavigationBar.dart';
 import 'package:koey/auth/register_view.dart';
+import 'package:koey/circle.dart';
 
 class LoginView extends StatefulWidget {
   const LoginView({super.key});
@@ -94,8 +94,7 @@ class _LoginViewState extends State<LoginView> {
                                 if (formKey.currentState!.validate()) {
                                   Navigator.of(context)
                                       .pushReplacement(MaterialPageRoute(
-                                    builder: (context) =>
-                                        const NavigationScreen(),
+                                    builder: (context) => const LoadingPage(),
                                   ));
                                 }
                               },

@@ -11,8 +11,8 @@ class MessagScreen extends StatelessWidget {
         children: [
           Center(
             child: Text(
-              'Messag',
-              style: TextStyle(fontSize: 50),
+              'Sorry, you do not have any Messag 😔',
+              style: TextStyle(fontSize: 30),
             ),
           )
         ],

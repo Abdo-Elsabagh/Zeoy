@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:koey/Screen/add%202/back_end.dart';
+import 'package:koey/Screen/add%202/front_end.dart';
 import 'package:koey/components/categories_add.dart';
 
 class WebCategories extends StatelessWidget {
@@ -15,7 +16,11 @@ class WebCategories extends StatelessWidget {
           children: [
             Adding(
                 image: 'asset/image/Front end.png',
-                onTop: () {},
+                onTop: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (scontext) => const FrontEndCategories2(),
+                  ));
+                },
                 name: 'Front end'),
             const SizedBox(
               height: 20,

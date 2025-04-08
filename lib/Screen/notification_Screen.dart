@@ -11,8 +11,8 @@ class NotificationScreen extends StatelessWidget {
         children: [
           Center(
             child: Text(
-              'Notiification',
-              style: TextStyle(fontSize: 50),
+              'Sorry, you do not have any Notification 😔',
+              style: TextStyle(fontSize: 30),
             ),
           )
         ],
