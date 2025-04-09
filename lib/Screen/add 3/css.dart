@@ -1,11 +1,44 @@
 import 'package:flutter/material.dart';
 import 'package:koey/components/coures_add.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class CssNumber extends StatelessWidget {
   const CssNumber({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final Uri _url1 = Uri.parse('https://youtu.be/X1ulCwyhCVM?feature=shared');
+
+    Future<void> _launchUrl() async {
+      if (!await launchUrl(_url1)) {
+        throw Exception('Could not launch $_url1');
+      }
+    }
+
+    final Uri _url2 = Uri.parse('https://youtu.be/89VLfs-wpEY?feature=shared');
+
+    Future<void> _launchUr2() async {
+      if (!await launchUrl(_url2)) {
+        throw Exception('Could not launch $_url2');
+      }
+    }
+
+    final Uri _url3 = Uri.parse('https://youtu.be/66sjwQ-hB64?feature=shared');
+
+    Future<void> _launchUr3() async {
+      if (!await launchUrl(_url3)) {
+        throw Exception('Could not launch $_url3');
+      }
+    }
+
+    final Uri _url4 = Uri.parse('https://youtu.be/xkNpIsbxMuo?feature=shared');
+
+    Future<void> _launchUr4() async {
+      if (!await launchUrl(_url4)) {
+        throw Exception('Could not launch $_url4');
+      }
+    }
+
     return SafeArea(
         child: Scaffold(
       body: SingleChildScrollView(
@@ -18,10 +51,18 @@ class CssNumber extends StatelessWidget {
                 name2: '2',
                 name3: '3',
                 name4: '4',
-                onTop1: () {},
-                onTop2: () {},
-                onTop3: () {},
-                onTop4: () {},
+                onTop1: () {
+                  _launchUrl();
+                },
+                onTop2: () {
+                  _launchUr2();
+                },
+                onTop3: () {
+                  _launchUr3();
+                },
+                onTop4: () {
+                  _launchUr4();
+                },
               ),
               const SizedBox(
                 height: 20,

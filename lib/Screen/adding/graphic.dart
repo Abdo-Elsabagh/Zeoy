@@ -1,12 +1,31 @@
 import 'package:flutter/material.dart';
 import 'package:koey/Screen/add%202/photo_Shop.dart';
 import 'package:koey/components/categories_add2.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class GraphicCategories extends StatelessWidget {
   const GraphicCategories({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final Uri _url = Uri.parse(
+        'https://www.youtube.com/playlist?list=PLrmCLtyHNeXgfj73-EzhZD5dJhD6fZXEA');
+
+    Future<void> _launchUrl() async {
+      if (!await launchUrl(_url)) {
+        throw Exception('Could not launch $_url');
+      }
+    }
+
+    final Uri _url2 = Uri.parse(
+        'https://www.youtube.com/playlist?list=PLrmCLtyHNeXjlag2T8_eTKYwg_gP3CIup');
+
+    Future<void> _launchUr() async {
+      if (!await launchUrl(_url2)) {
+        throw Exception('Could not launch $_url2');
+      }
+    }
+
     return SafeArea(
       child: Scaffold(
         body: Padding(
@@ -43,7 +62,9 @@ class GraphicCategories extends StatelessWidget {
               Adding2(
                 image: 'asset/image/illstritor.png',
                 name: 'illustrator',
-                onTop: () {},
+                onTop: () {
+                  _launchUrl();
+                },
               ),
               const SizedBox(
                 height: 40,
@@ -51,7 +72,9 @@ class GraphicCategories extends StatelessWidget {
               Adding2(
                 image: 'asset/image/indesien.png',
                 name: 'Indesien',
-                onTop: () {},
+                onTop: () {
+                  _launchUr();
+                },
               )
             ],
           ),

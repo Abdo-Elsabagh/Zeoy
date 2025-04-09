@@ -1,11 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:koey/components/categories_add2.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class UiCategories extends StatelessWidget {
   const UiCategories({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final Uri _url = Uri.parse(
+        'https://www.youtube.com/watch?v=7K7pEPFepWA&list=PLjzhiGLyugKynpBi7v2AWMCJgTrRI6Ne-');
+
+    Future<void> _launchUrl() async {
+      if (!await launchUrl(_url)) {
+        throw Exception('Could not launch $_url');
+      }
+    }
+  
     return SafeArea(
         child: Scaffold(
       body: Padding(
@@ -30,7 +40,9 @@ class UiCategories extends StatelessWidget {
             Adding2(
               image: 'asset/image/figma.jpeg',
               name: 'Figma',
-              onTop: () {},
+              onTop: () {
+                _launchUrl();
+              },
             ),
             const SizedBox(
               height: 40,
