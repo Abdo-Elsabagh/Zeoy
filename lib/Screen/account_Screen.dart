@@ -44,7 +44,7 @@ class AccountScreen extends StatelessWidget {
                     ],
                   ),
                   Text(
-                    'Zenaiab',
+                    'Abdallah',
                     style: TextStyle(fontSize: 24),
                   )
                 ],
