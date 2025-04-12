@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 
 class Adding extends StatelessWidget {
-  Adding(
-      {super.key,
-      required this.image,
-      required this.onTop,
-      required this.name});
+  Adding({
+    super.key,
+    required this.image,
+    required this.onTop,
+    required this.name,
+  });
   String image;
   String name;
   VoidCallback? onTop;

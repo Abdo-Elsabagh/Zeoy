@@ -6,16 +6,19 @@ class NotificationScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Center(
-            child: Text(
-              'Sorry, you do not have any Notification 😔',
-              style: TextStyle(fontSize: 30),
-            ),
-          )
-        ],
+      body: Padding(
+        padding: EdgeInsets.all(10.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Center(
+              child: Text(
+                'Sorry, you do not have any Notification 😔',
+                style: TextStyle(fontSize: 30),
+              ),
+            )
+          ],
+        ),
       ),
     );
   }

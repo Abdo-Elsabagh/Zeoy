@@ -9,21 +9,21 @@ class FrontEndCategories2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Uri _url2 = Uri.parse(
+    final Uri url2 = Uri.parse(
         'https://www.youtube.com/watch?v=GM6dQBmc-Xg&list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv');
 
-    Future<void> _launchUr() async {
-      if (!await launchUrl(_url2)) {
-        throw Exception('Could not launch $_url2');
+    Future<void> launchUr() async {
+      if (!await launchUrl(url2)) {
+        throw Exception('Could not launch $url2');
       }
     }
 
-    final Uri _ur2 = Uri.parse(
+    final Uri ur2 = Uri.parse(
         'https://www.youtube.com/watch?v=ACOiGZoqC8w&list=PLDoPjvoNmBAw4eOj58MZPakHjaO3frVMF');
 
-    Future<void> _launchUr2() async {
-      if (!await launchUrl(_ur2)) {
-        throw Exception('Could not launch $_ur2');
+    Future<void> launchUr2() async {
+      if (!await launchUrl(ur2)) {
+        throw Exception('Could not launch $ur2');
       }
     }
 
@@ -75,7 +75,7 @@ class FrontEndCategories2 extends StatelessWidget {
                 image: 'asset/image/JAVA SCRIPT GREEN.png',
                 name: 'jave Script',
                 onTop: () {
-                  _launchUr();
+                  launchUr();
                 },
               ),
               const SizedBox(
@@ -85,7 +85,7 @@ class FrontEndCategories2 extends StatelessWidget {
                 image: 'asset/image/git hub.png',
                 name: 'Git & GitHub',
                 onTop: () {
-                  _launchUr2();
+                  launchUr2();
                 },
               ),
             ],
